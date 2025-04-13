@@ -11,7 +11,7 @@ COPY pages ./pages
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 8501
 
 ENTRYPOINT ["streamlit", "run"]
-CMD ["app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+CMD ["app.py", "--server.port=8501", "--server.address=0.0.0.0"]
