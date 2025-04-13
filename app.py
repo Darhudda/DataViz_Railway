@@ -2,6 +2,9 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 import pandas as pd
+import os
+port = os.environ.get("PORT", 8080)
+
 
 # Configuración de la app
 st.set_page_config(page_title="App con Mapas", layout="wide")
